@@ -1,4 +1,4 @@
-import { ServiceCard } from "./Component/serviceCard";
+import { ServiceCard } from "./Component/ServiceCard";
 
 const Service = ({homePage , view}) => {
   return (
