@@ -1,16 +1,17 @@
 import { ServiceCtaItem, ServiceItem } from "./ServiceItem";
-import serviceIcon1 from "../../../assets/images/icon-service-1.svg";
-import serviceIcon2 from "../../../assets/images/icon-service-2.svg";
-import serviceIcon3 from "../../../assets/images/icon-service-3.svg";
-import serviceIcon4 from "../../../assets/images/icon-service-4.svg";
-import serviceIcon5 from "../../../assets/images/icon-service-5.svg";
-import serviceIcon6 from "../../../assets/images/icon-service-6.svg";
-import serviceIcon7 from "../../../assets/images/icon-service-7.svg";
-import serviceIcon8 from "../../../assets/images/icon-service-8.svg";
-import serviceIconCTA from "../../../assets/images/icon-cta.svg";
+import serviceIcon1 from "../../../../assets/images/icon-service-1.svg";
+import serviceIcon2 from "../../../../assets/images/icon-service-2.svg";
+import serviceIcon3 from "../../../../assets/images/icon-service-3.svg";
+import serviceIcon4 from "../../../../assets/images/icon-service-4.svg";
+import serviceIcon5 from "../../../../assets/images/icon-service-5.svg";
+import serviceIcon6 from "../../../../assets/images/icon-service-6.svg";
+import serviceIcon7 from "../../../../assets/images/icon-service-7.svg";
+import serviceIcon8 from "../../../../assets/images/icon-service-8.svg";
+import serviceIconCTA from "../../../../assets/images/icon-cta.svg";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-export const TherapistTeam = (homePage = false) => {
+export const ServiceCard = ({ homePage = true, view = true }) => {
   const serviceData = [
     {
       icon: serviceIcon1,
@@ -127,6 +128,7 @@ export const TherapistTeam = (homePage = false) => {
   ];
 
   const [updateServiceData, setUpdateServiceData] = useState(serviceData);
+  console.log("updateServiceData: ", updateServiceData);
 
   useEffect(() => {
     !homePage && setUpdateServiceData(serviceDataPages);
@@ -151,9 +153,11 @@ export const TherapistTeam = (homePage = false) => {
           <div className="col-lg-5">
             {/* Section Button */}
             <div className="section-btn wow fadeInUp" data-wow-delay="0.25s">
-              <a href="#" className="btn-default">
-                view all services
-              </a>
+              {view && (
+                <Link to={"services"} className="btn-default">
+                  view all services
+                </Link>
+              )}
             </div>
           </div>
         </div>
@@ -162,7 +166,13 @@ export const TherapistTeam = (homePage = false) => {
         <div className="row">
           {updateServiceData?.map((service, index) => (
             <div
-              className={`col-lg-3 col-md-6 ${service?.cta && "col-lg-6"}`}
+              className={`${
+                service?.cta
+                  ? homePage
+                    ? "col-lg-9"
+                    : "col-lg-12"
+                  : "col-lg-3 col-md-6"
+              }`}
               key={index}
             >
               {service.cta ? (

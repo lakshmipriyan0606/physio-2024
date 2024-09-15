@@ -1,5 +1,6 @@
 import React from 'react';
-import ErrorPageImg from 'images/404-error-img.png'
+import ErrorPageImg from '../../../assets/images/404-error-img.png'
+import { Link } from 'react-router-dom';
 
 const ErrorPage = () => {
   return (
@@ -19,12 +20,12 @@ const ErrorPage = () => {
               <p className="wow fadeInUp" data-wow-delay="0.5s">
                 The page you are looking for does not exist
               </p>
-              <a
-                className="btn-default wow fadeInUp"
-                data-wow-delay="0.75s"
+              <Link
+              to={'/'}
+              className='btn-default'
               >
                 Back To Home
-              </a>
+              </Link>
             </div>
           </div>
         </div>

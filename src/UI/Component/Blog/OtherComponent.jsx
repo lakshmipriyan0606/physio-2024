@@ -1,4 +1,3 @@
-
 const BlogItem = ({ imageSrc, title, delay = 0 }) => {
   return (
     <div className="col-lg-4 col-md-6">
@@ -29,12 +28,12 @@ const BlogItem = ({ imageSrc, title, delay = 0 }) => {
 
 export default BlogItem;
 
-export const SectionTitle = () => {
+export const SectionTitle = ({ title, descriptionLeft, descriptionRight }) => {
   return (
     <div className="section-title">
-      <h3 className="wow fadeInUp">news & blog</h3>
+      <h3 className="wow fadeInUp">{title}</h3>
       <h2 className="text-anime-style-2" data-cursor="-opaque">
-        <span>Our Latest</span> Insights And Updates
+        <span>{descriptionLeft}</span> {descriptionRight}
       </h2>
     </div>
   );

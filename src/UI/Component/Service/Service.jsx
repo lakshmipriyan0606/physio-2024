@@ -1,9 +1,9 @@
-import { TherapistTeam } from "./Component/TherapistTeam";
+import { ServiceCard } from "./Component/serviceCard";
 
-const Service = () => {
+const Service = ({homePage , view}) => {
   return (
     <div>
-      <TherapistTeam />
+      <ServiceCard homePage={homePage} view={view}/>
     </div>
   );
 };

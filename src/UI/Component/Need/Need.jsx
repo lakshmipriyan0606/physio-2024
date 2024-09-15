@@ -1,12 +1,12 @@
-import needAttentionImg1 from '../../assets/images/icon-need-attention-1.svg'
-import needAttentionImg2 from '../../assets/images/icon-need-attention-2.svg'
-import needAttentionImg3 from '../../assets/images/icon-need-attention-3.svg'
-import needAttentionImg4 from '../../assets/images/icon-need-attention-4.svg'
-import needAttentionImg5 from '../../assets/images/icon-need-attention-5.svg'
-import needAttentionImg6 from '../../assets/images/icon-need-attention-6.svg'
-import needAttentionImg7 from '../../assets/images/icon-need-attention-7.svg'
-import needAttentionImg8 from '../../assets/images/icon-need-attention-8.svg'
-import needAttentionImg9 from '../../assets/images/icon-need-attention-9.svg'
+import needAttentionImg1 from '../../../assets/images/icon-need-attention-1.svg'
+import needAttentionImg2 from '../../../assets/images/icon-need-attention-2.svg'
+import needAttentionImg3 from '../../../assets/images/icon-need-attention-3.svg'
+import needAttentionImg4 from '../../../assets/images/icon-need-attention-4.svg'
+import needAttentionImg5 from '../../../assets/images/icon-need-attention-5.svg'
+import needAttentionImg6 from '../../../assets/images/icon-need-attention-6.svg'
+import needAttentionImg7 from '../../../assets/images/icon-need-attention-7.svg'
+import needAttentionImg8 from '../../../assets/images/icon-need-attention-8.svg'
+import needAttentionImg9 from '../../../assets/images/icon-need-attention-9.svg'
 
 const needData = [
     { src: needAttentionImg1, alt: 'neck pain', label: 'neck pain' },

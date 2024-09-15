@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react';
 import { CountUp } from 'countup.js';
-import solutionCounterImg1 from '../../../assets/images/icon-counter-1.svg';
-import solutionCounterImg2 from '../../../assets/images/icon-counter-2.svg';
-import solutionCounterImg3 from '../../../assets/images/icon-counter-3.svg';
-import solutionCounterImg4 from '../../../assets/images/icon-counter-4.svg';
+import solutionCounterImg1 from '../../../../assets/images/icon-counter-1.svg';
+import solutionCounterImg2 from '../../../../assets/images/icon-counter-2.svg';
+import solutionCounterImg3 from '../../../../assets/images/icon-counter-3.svg';
+import solutionCounterImg4 from '../../../../assets/images/icon-counter-4.svg';
 
 const CampanyCounter = () => {
   const counterCampanyRef = useRef(null);
@@ -13,10 +13,12 @@ const CampanyCounter = () => {
       const counter1 = new CountUp('counter-1', 78, { duration: 5 });
       const counter2 = new CountUp('counter-2', 98, { duration: 6 });
       const counter3 = new CountUp('counter-3', 950, { duration: 3 });
+      const counter4 = new CountUp('counter-4', 250, { duration: 3 });
 
       counter1.start();
       counter2.start();
       counter3.start();
+      counter4.start();
     };
 
 
@@ -91,7 +93,7 @@ const CampanyCounter = () => {
             </div>
             <div className="company-counter-content">
               <h3>
-                <span id="counter-3" className="counter"></span>+
+                <span id="counter-4" className="counter"></span>+
               </h3>
               <p>Skilled Therapist</p>
             </div>

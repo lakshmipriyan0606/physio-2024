@@ -1,6 +1,6 @@
 import { getWhyChooseUsItems, WhyChooseUsItem } from "./WhyChooseItem";
 
-import whyUsMainImg from '../../assets/images/why-us-img.png'
+import whyUsMainImg from '../../../assets/images/why-us-img.png'
 
 const WhyChooseUs = () => {
   return (

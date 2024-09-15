@@ -1,7 +1,8 @@
-import ServiceSingleDetailEntryImg1 from '../../assets/images/service-entry-img-1.jpg'
-import ServiceSingleDetailEntryImg2 from '../../assets/images/service-entry-img-2.jpg'
-import ServiceSingleDetailImg from '../../assets/images/service-single-img.jpg'
-import ctaImg from '../../assets/images/icon-cta.svg'
+import ServiceSingleDetailEntryImg1 from '../../../assets/images/service-entry-img-1.jpg'
+import ServiceSingleDetailEntryImg2 from '../../../assets/images/service-entry-img-2.jpg'
+import ServiceSingleDetailImg from '../../../assets/images/service-single-img.jpg'
+import ctaImg from '../../../assets/images/icon-cta.svg'
+import { Link } from 'react-router-dom';
 
 function ServiceSingleDetail() {
   return (
@@ -98,7 +99,7 @@ function ServiceSingleDetail() {
                 </div>
 
                 <div className="cta-appointment-btn">
-                  <a href="#" className="btn-default">Book Appointment</a>
+                  {/* <Link to='book-appointment' className="btn-default">Book Appointment</Link> */}
                 </div>
               </div>
             </div>

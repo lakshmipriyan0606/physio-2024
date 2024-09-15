@@ -1,4 +1,4 @@
-import sparkIcon from '../../assets/images/icon-sparkles.svg'
+import sparkIcon from '../../../assets/images/icon-sparkles.svg'
 
 const messages = [
   "Emergency No. : (+01) 789 856 258",

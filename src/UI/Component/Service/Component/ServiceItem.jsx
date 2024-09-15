@@ -1,4 +1,5 @@
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export const ServiceItem = ({ icon, title, description, delay }) => {
   return (
@@ -17,7 +18,7 @@ export const ServiceItem = ({ icon, title, description, delay }) => {
       {/* Service Footer */}
       <div className="service-footer">
         <a href="#" className="service-btn">
-          <FaArrowRight className='text-white'/>
+         <Link to={'/our-detail'}> <FaArrowRight className='text-white'/></Link>
         </a>
       </div>
     </div>
@@ -49,9 +50,9 @@ export const ServiceCtaItem = ({
 
       {/* Service Footer */}
       <div className="service-cta-btn">
-        <a href="#" className="btn-default">
+        <Link to='book-appointment' className="btn-default">
           {ctaText}
-        </a>
+        </Link>
       </div>
     </div>
   );

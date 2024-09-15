@@ -1,7 +1,7 @@
-import theraphyImg1 from '../../../assets/images/therapy-process-1.jpg'
-import theraphyImg2 from '../../../assets/images/therapy-process-2.jpg'
-import theraphyImg3 from '../../../assets/images/therapy-process-3.jpg'
-import theraphyImg4 from '../../../assets/images/therapy-process-4.jpg'
+import theraphyImg1 from '../../../../assets/images/therapy-process-1.jpg'
+import theraphyImg2 from '../../../../assets/images/therapy-process-2.jpg'
+import theraphyImg3 from '../../../../assets/images/therapy-process-3.jpg'
+import theraphyImg4 from '../../../../assets/images/therapy-process-4.jpg'
 const TherapyProcess = () => {
   return (
     <div className="therapy-process">

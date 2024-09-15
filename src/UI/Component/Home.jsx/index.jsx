@@ -6,11 +6,8 @@ import Navbar from './Component/Navbar'
 const Home = () => {
   return (
     <div>
-      <Topbar/>
-      <Navbar/>
       <HeroSection/>
       <HeroContactUs/>
-
     </div>
   )
 }

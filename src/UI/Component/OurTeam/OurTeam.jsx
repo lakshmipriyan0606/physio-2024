@@ -1,8 +1,8 @@
 import { FaFacebookF, FaYoutube, FaInstagram, FaTwitter } from "react-icons/fa";
-import teamImg1 from "../../assets/images/team-1.jpg";
-import teamImg2 from "../../assets/images/team-2.jpg";
-import teamImg3 from "../../assets/images/team-3.jpg";
-import teamImg4 from "../../assets/images/team-4.jpg";
+import teamImg1 from "../../../assets/images/team-1.jpg";
+import teamImg2 from "../../../assets/images/team-2.jpg";
+import teamImg3 from "../../../assets/images/team-3.jpg";
+import teamImg4 from "../../../assets/images/team-4.jpg";
 
 function OurTeam() {
   const teamMembers = [
@@ -28,13 +28,13 @@ function OurTeam() {
               </h2>
             </div>
           </div>
-          <div className="col-lg-3">
+           {/* <div className="col-lg-3">
             <div className="section-btn">
               <a href="#" className="btn-default">
                 View All Team
               </a>
-            </div>
-          </div>
+            </div> 
+          </div> */}
         </div>
 
         <div className="row">

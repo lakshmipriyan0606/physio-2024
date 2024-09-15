@@ -1,6 +1,7 @@
 import React from 'react';
-import doctorImg from '../../../../assets/images/export-doctor-img.jpg'
-import heroImg from '../../../../assets/images/hero-img.png'
+import doctorImg from '../../../../../assets/images/export-doctor-img.jpg'
+import heroImg from '../../../../../assets/images/hero-img.png'
+import { Link } from 'react-router-dom';
 
 
 
@@ -25,12 +26,12 @@ const HeroSection = () => {
 
               {/* Hero Content Body Start */}
               <div className="hero-content-body wow fadeInUp" data-wow-delay="0.5s">
-                <a href="#" className="btn-default">
+                <Link to={'our-detail'} className="btn-default">
                   Explore Services
-                </a>
-                <a href="#" className="btn-default btn-highlighted">
+                </Link>
+                <Link to={'book-appointment'} className="btn-default btn-highlighted">
                   Book Appointment
-                </a>
+                </Link>
               </div>
               {/* Hero Content Body End */}
 

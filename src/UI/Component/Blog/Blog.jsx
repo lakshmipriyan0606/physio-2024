@@ -1,7 +1,7 @@
 import BlogItem, { SectionButton, SectionTitle } from './OtherComponent';
-import  blogPostImg1 from '../../assets/images/post-1.jpg'
-import  blogPostImg2 from '../../assets/images/post-2.jpg'
-import  blogPostImg3 from '../../assets/images/post-3.jpg'
+import  blogPostImg1 from '../../../assets/images/post-1.jpg'
+import  blogPostImg2 from '../../../assets/images/post-2.jpg'
+import  blogPostImg3 from '../../../assets/images/post-3.jpg'
 
 const BlogSection = () => {
   return (
@@ -9,11 +9,11 @@ const BlogSection = () => {
       <div className="container">
         <div className="row section-row align-items-center">
           <div className="col-lg-9">
-            <SectionTitle />
+            <SectionTitle title={'news & blog'} descriptionLeft={'Our Latest'}  descriptionRight={'Insights And Updates'}/>
           </div>
-          <div className="col-lg-3">
+          {/* <div className="col-lg-3">
             <SectionButton />
-          </div>
+          </div> */}
         </div>
         <div className="row">
           <BlogItem

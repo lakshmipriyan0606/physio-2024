@@ -1,6 +1,7 @@
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { MdPhone, MdEmail, MdLocationOn } from 'react-icons/md';
-import footerLogo from  '../../assets/images/footer-logo.svg'
+import footerLogo from  '../../../assets/images/footer-logo.svg'
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -120,9 +121,9 @@ function Footer() {
               {/* Footer Links Start */}
               <div className="footer-links">
                 <ul>
-                  <li><a href="#">about us</a></li>
-                  <li><a href="#">services</a></li>
-                  <li><a href="#">contact us</a></li>
+                  <li><Link to={'about'}>about us</Link></li>
+                  <li><Link to={'services'}>services</Link></li>
+                  <li><Link to={'contact'}>contact us</Link></li>
                 </ul>
               </div>
               {/* Footer Links End */}

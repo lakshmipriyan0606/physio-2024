@@ -1,13 +1,13 @@
 import ContactInfo from './ContactInfo';
 import ContactForm from './ContactForm';
 import GoogleMap from './GoogleMap';
-import contactusImg from '../../assets/images/contact-us-img.jpg'
-import greenLocation from '../../assets/images/icon-green-location.svg'
-import greenMail from '../../assets/images/icon-green-mail.svg'
-import greenPhone from '../../assets/images/icon-green-phone.svg'
-import greenHour from '../../assets/images/icon-green-hour.svg'
+import contactusImg from '../../../assets/images/contact-us-img.jpg'
+import greenLocation from '../../../assets/images/icon-green-location.svg'
+import greenMail from '../../../assets/images/icon-green-mail.svg'
+import greenPhone from '../../../assets/images/icon-green-phone.svg'
+import greenHour from '../../../assets/images/icon-green-hour.svg'
 
-const ContactPage = () => {
+const ContactSinglePage = () => {
   const contactInfos = [
     {
       icon: greenLocation,
@@ -73,4 +73,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default ContactSinglePage;

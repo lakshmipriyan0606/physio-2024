@@ -3,7 +3,7 @@ import SolutionPlanImage from './SolutionPlanImage';
 import SolutionPlanContent from './SolutionPlantContent';
 import SolutionPlanCounter from './SolutionPlanCounter';
 
-const SolutionPlan = () => {
+const SolutionPlan = ({isCounter = true}) => {
   return (
     <div className="solution-your-plan">
       <div className="container">
@@ -13,7 +13,7 @@ const SolutionPlan = () => {
           </div>
           <div className="col-lg-6">
             <SolutionPlanContent />
-            <SolutionPlanCounter />
+           { isCounter &&   <SolutionPlanCounter />}
           </div>
         </div>
       </div>

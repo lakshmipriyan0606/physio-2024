@@ -1,7 +1,7 @@
 import React from 'react';
-import ExpertIcon from '../../../../assets/images/icon-home-contact-us-1.svg'
-import EmergencyIcon from '../../../../assets/images/icon-home-contact-us-2.svg'
-import consultantIcon from '../../../../assets/images/icon-home-contact-us-3.svg'
+import ExpertIcon from '../../../../../assets/images/icon-home-contact-us-1.svg'
+import EmergencyIcon from '../../../../../assets/images/icon-home-contact-us-2.svg'
+import consultantIcon from '../../../../../assets/images/icon-home-contact-us-3.svg'
 
 
 const HeroContactUs = () => {

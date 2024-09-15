@@ -1,5 +1,5 @@
-import solutionPalnImg1 from '../../assets/images/solution-plan-img-1.jpg'
-import solutionPalnImg2 from '../../assets/images/solution-plan-img-2.jpg'
+import solutionPalnImg1 from '../../../assets/images/solution-plan-img-1.jpg'
+import solutionPalnImg2 from '../../../assets/images/solution-plan-img-2.jpg'
 
 const SolutionPlanImage = () => {
   return (

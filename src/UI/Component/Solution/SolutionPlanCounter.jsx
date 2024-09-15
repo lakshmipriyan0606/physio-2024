@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { CountUp } from 'countup.js';
-import solutionCounterImg1 from '../../assets/images/icon-solution-counter-1.svg';
-import solutionCounterImg2 from '../../assets/images/icon-solution-counter-2.svg';
-import solutionCounterImg3 from '../../assets/images/icon-solution-counter-3.svg';
+import solutionCounterImg1 from '../../../assets/images/icon-solution-counter-1.svg';
+import solutionCounterImg2 from '../../../assets/images/icon-solution-counter-2.svg';
+import solutionCounterImg3 from '../../../assets/images/icon-solution-counter-3.svg';
 
 const SolutionPlanCounter = () => {
   const counterRef = useRef(null);

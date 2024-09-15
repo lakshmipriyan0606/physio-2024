@@ -1,9 +1,9 @@
 import SolutionPlan from './SolutionPlan'
 
-const Solution = () => {
+const Solution = ({isCounter}) => {
   return (
     <div>
-      <SolutionPlan/>
+      <SolutionPlan isCounter={isCounter}/>
     </div>
   )
 }

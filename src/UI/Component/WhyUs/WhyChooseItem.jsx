@@ -1,9 +1,9 @@
-import whyUsIcon1 from "../../assets/images/icon-why-us-1.svg";
-import whyUsIcon2 from "../../assets/images/icon-why-us-2.svg";
-import whyUsIcon3 from "../../assets/images/icon-why-us-3.svg";
-import whyUsIcon4 from "../../assets/images/icon-why-us-4.svg";
-import whyUsIcon5 from "../../assets/images/icon-why-us-5.svg";
-import whyUsIcon6 from "../../assets/images/icon-why-us-6.svg";
+import whyUsIcon1 from "../../../assets/images/icon-why-us-1.svg";
+import whyUsIcon2 from "../../../assets/images/icon-why-us-2.svg";
+import whyUsIcon3 from "../../../assets/images/icon-why-us-3.svg";
+import whyUsIcon4 from "../../../assets/images/icon-why-us-4.svg";
+import whyUsIcon5 from "../../../assets/images/icon-why-us-5.svg";
+import whyUsIcon6 from "../../../assets/images/icon-why-us-6.svg";
 
 export const getWhyChooseUsItems = [
   {

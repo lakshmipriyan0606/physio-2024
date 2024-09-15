@@ -1,6 +1,6 @@
 
 
-import ctaImg from '../../../assets/images/icon-cta.svg'
+import ctaImg from '../../../../assets/images/icon-cta.svg'
 
 const CallToAction = () => {
   return (
@@ -19,13 +19,13 @@ const CallToAction = () => {
           </div>
         </div>
 
-        <div className="col-lg-6">
+        {/* <div className="col-lg-6">
           <div className="cta-appointment-btn">
             <a href="#" className="btn-default">
               Book Appointment
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
