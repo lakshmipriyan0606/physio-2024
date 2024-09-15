@@ -1,6 +1,6 @@
 import { SectionTitle } from '../../Blog/OtherComponent';
 import OurMVAItem from './OurMVAItem';
-import CallToAction from './CalltoAction';
+import CallToAction from './CallToAction';
 import missionImg from '../../../../assets/images/icon-our-mission.svg'
 import visionImg from '../../../../assets/images/icon-our-vision.svg'
 import approchImg from '../../../../assets/images/icon-our-approch.svg'
