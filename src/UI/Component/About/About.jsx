@@ -6,6 +6,8 @@ import aboutIcon2 from "../../assets/images/icon-about-us-2.svg";
 import aboutIcon3 from "../../assets/images/icon-about-us-3.svg";
 import aboutIcon4 from "../../assets/images/icon-about-us-4.svg";
 import GalleryCarousel from "./GalleryCarousel";
+import MissionVision from "./Vision/MissionVision";
+import TherapyProcess from "./TherapyProcess/TherapyProcess";
 
 function AboutUs() {
   return (

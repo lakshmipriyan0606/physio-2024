@@ -7,9 +7,10 @@ import './assets/css/custom.css'
 import './assets/css/slicknav.min.css'
 import './assets/css/animate.css'
 import './assets/css/swiper-bundle.min.css'
+import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
-  <>
+  <BrowserRouter>
     <App />
-  </>,
+  </BrowserRouter>,
 )

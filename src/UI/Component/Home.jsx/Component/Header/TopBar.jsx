@@ -6,7 +6,7 @@ const Topbar = () => {
     <div className="topbar">
       <div className="container">
         <div className="row align-items-center">
-        <div className="col-lg-9 col-md-12">
+        <div className="col-md-12 col-12 d-flex justify-content-between p-1">
           <TopbarContactInfo />
           <TopbarSocialLinks />
           </div>

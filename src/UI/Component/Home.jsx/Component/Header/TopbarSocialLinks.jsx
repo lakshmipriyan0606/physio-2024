@@ -2,7 +2,7 @@ import { BsFacebook, BsTwitter, BsInstagram, BsYoutube } from 'react-icons/bs';
 
 const TopbarSocialLinks = () => {
   return (
-    <div className="topbar-social-links">
+    <div className="topbar-social-links mt-md-2">
       <ul>
         <li>
           <a href="#">
@@ -23,8 +23,7 @@ const TopbarSocialLinks = () => {
           <a href="#">
             <BsYoutube />
           </a>
-        </li>
-        
+        </li>     
       </ul>
     </div>
   );
