@@ -1,51 +1,22 @@
-/* ----------------------------------------------------------------------------------------
-* Author        : Awaiken
-* Template Name : Physiocare - Physiotherapy HTML Template
-* File          : CSS File
-* Version       : 1.0
-* ---------------------------------------------------------------------------------------- */
-/* INDEX
-----------------------------------------------------------------------------------------
-01. Global Variables
-02. General css
-03. Header css
-04. Hero css
-05. Home Contact Us css 
-06. About Us css
-07. Gallery Carousel css
-08. Our Services css
-09. Solution Your Plan css
-10. Why Choose Us css
-11. Need Attension css
-12. Our Theraphist css
-13. Our Testiminial css
-14. Our Blog css
-15. Scrolling Ticker css
-16. Footer css
-17. About us Page css
-18. Services Page css
-19. Service Single css
-20. Blog Archive css
-21. Blog Single css
-22. Theraphist Page css
-23. Theraphist Single css
-24. Testimonials Page css
-25.	FAQs Page css
-26. Contact us Page css
-27. Make Appointment Page css
-28. 404 Page css
-29. Responsive css
--------------------------------------------------------------------------------------- */
 
-/************************************/
-/*** 	 01. Global Variables	  ***/
-/************************************/	
 
-:root{
+/* :root{
 	--primary-color			: #153C33;
 	--secondary-color		: #E6EFED;
 	--text-color			: #153C33B3;
 	--accent-color			: #619E90;
+	--white-color			: #FFFFFF;
+	--divider-color			: #FFFFFF26;
+	--dark-divider-color	: #153C331A;
+	--error-color			: rgb(230, 87, 87);
+	--accent-font			: "Archivo", sans-serif;
+	--default-font			: "DM Sans", sans-serif;
+} */
+:root{
+	--primary-color			: #1F62F3;
+	--secondary-color		: #153C331A;
+	--text-color			: #153C33B3;
+	--accent-color			: #1F62F3;
 	--white-color			: #FFFFFF;
 	--divider-color			: #FFFFFF26;
 	--dark-divider-color	: #153C331A;
@@ -5158,3 +5129,21 @@ border-bottom: 2px solid white;
 
 
   
+/* 
+.loader {
+	width: 60px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	animation: l11 2s infinite;
+  }
+  @keyframes l11 {
+	0%   {background: conic-gradient(#FFFFFF 0     ,#0000 0)}
+	12.5%{background: conic-gradient(#FFFFFF 45deg ,#0000 46deg)}
+	25%  {background: conic-gradient(#FFFFFF 90deg ,#0000 91deg)}
+	37.5%{background: conic-gradient(#FFFFFF 135deg,#0000 136deg)}
+	50%  {background: conic-gradient(#FFFFFF 180deg,#0000 181deg)}
+	62.5%{background: conic-gradient(#FFFFFF 225deg,#0000 226deg)}
+	75%  {background: conic-gradient(#FFFFFF 270deg,#0000 271deg)}
+	87.5%{background: conic-gradient(#FFFFFF 315deg,#0000 316deg)}
+	100% {background: conic-gradient(#FFFFFF 360deg,#0000 360deg)}
+  } */

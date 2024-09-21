@@ -1,4 +1,5 @@
 import React from "react";
+import AOS from "aos";
 import aboutImg from "../../../assets/images/about-img.jpg";
 import experienceIcon from "../../../assets/images/icon-experience.svg";
 import aboutIcon1 from "../../../assets/images/icon-about-us-1.svg";
@@ -7,21 +8,33 @@ import aboutIcon3 from "../../../assets/images/icon-about-us-3.svg";
 import aboutIcon4 from "../../../assets/images/icon-about-us-4.svg";
 import { Link } from "react-router-dom";
 
-const AboutContent = ({book = true}) => {
+const AboutContent = ({ book = true }) => {
+  React.useEffect(() => {
+    AOS.init({ duration: 4000 });
+  }, []);
+
   return (
     <div className="about-us">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">
             {/* About Image Start */}
-            <div className="about-us-image">
+            <div
+              className="about-us-image"
+              data-aos="fade-right"
+              data-aos-duration="2200"
+            >
               <div className="about-img">
                 <figure className="reveal image-anime">
                   <img src={aboutImg} alt="aboutImg" />
                 </figure>
 
                 {/* Company Experience Box Start */}
-                <div className="company-experience">
+                <div
+                  className="company-experience"
+                  data-aos="fade-up"
+                  data-aos-duration="2200"
+                >
                   <div className="icon-box">
                     <img src={experienceIcon} alt="experienceIcon" />
                   </div>
@@ -41,7 +54,11 @@ const AboutContent = ({book = true}) => {
             {/* About Us Content Start */}
             <div className="about-content">
               {/* Section Title Start */}
-              <div className="section-title">
+              <div
+                className="section-title"
+                data-aos="fade-down"
+                data-aos-duration="2200"
+              >
                 <h3 className="wow fadeInUp">about us</h3>
                 <h2 className="text-anime-style-2" data-cursor="-opaque">
                   We Are The Best For <span>Physiotherapy</span>
@@ -60,8 +77,10 @@ const AboutContent = ({book = true}) => {
               <div className="about-us-body">
                 {/* About List Item Start */}
                 <div
-                  className="about-list-item wow fadeInUp"
-                  data-wow-delay="0.5s"
+                  className="about-list-item"
+                  data-aos="fade-up"
+                  data-aos-delay="0.5s"
+                  data-aos-duration="2200"
                 >
                   <div className="icon-box">
                     <img src={aboutIcon1} alt="aboutIcon1" />
@@ -74,8 +93,10 @@ const AboutContent = ({book = true}) => {
 
                 {/* About List Item Start */}
                 <div
-                  className="about-list-item wow fadeInUp"
-                  data-wow-delay="0.5s"
+                  className="about-list-item"
+                  data-aos="fade-up"
+                  data-aos-delay="0.5s"
+                  data-aos-duration="2200"
                 >
                   <div className="icon-box">
                     <img src={aboutIcon2} alt="aboutIcon2" />
@@ -88,8 +109,10 @@ const AboutContent = ({book = true}) => {
 
                 {/* About List Item Start */}
                 <div
-                  className="about-list-item wow fadeInUp"
-                  data-wow-delay="0.75s"
+                  className="about-list-item"
+                  data-aos="fade-up"
+                  data-aos-duration="2200"
+                  data-aos-delay="0.75s"
                 >
                   <div className="icon-box">
                     <img src={aboutIcon3} alt="aboutIcon3" />
@@ -102,8 +125,10 @@ const AboutContent = ({book = true}) => {
 
                 {/* About List Item Start */}
                 <div
-                  className="about-list-item wow fadeInUp"
-                  data-wow-delay="0.75s"
+                  className="about-list-item"
+                  data-aos="fade-up"
+                  data-aos-delay="0.75s"
+                  data-aos-duration="2200"
                 >
                   <div className="icon-box">
                     <img src={aboutIcon4} alt="aboutIcon4" />
@@ -119,7 +144,12 @@ const AboutContent = ({book = true}) => {
               {/* About Us Footer Start */}
               <div className="about-us-footer">
                 {/* Doctor Info Start */}
-                <div className="doctor-info wow fadeInUp" data-wow-delay="1s">
+                <div
+                  className="doctor-info"
+                  data-aos="fade-up"
+                  data-aos-delay="1s"
+                  data-aos-duration="2200"
+                >
                   <div className="doctor-info-item">
                     <div className="image-box">
                       <figure className="image-anime">
@@ -137,8 +167,10 @@ const AboutContent = ({book = true}) => {
                 {/* Appointment Button Start */}
                 {book && (
                   <div
-                    className="appointment-btn wow fadeInUp"
-                    data-wow-delay="1s"
+                    className="appointment-btn"
+                    data-aos="fade-up"
+                    data-aos-delay="1s"
+                    data-aos-duration="2200"
                   >
                     <Link to="book-appointment" className="btn-default">
                       Make an appointment

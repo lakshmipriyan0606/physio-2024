@@ -1,10 +1,15 @@
+import AOS from 'aos';
 import { FaFacebookF, FaYoutube, FaInstagram, FaTwitter } from "react-icons/fa";
 import teamImg1 from "../../../assets/images/team-1.jpg";
 import teamImg2 from "../../../assets/images/team-2.jpg";
 import teamImg3 from "../../../assets/images/team-3.jpg";
 import teamImg4 from "../../../assets/images/team-4.jpg";
+import React from 'react';
 
 function OurTeam() {
+  React.useEffect(() => {
+    AOS.init({duration:4000})
+  }, []);
   const teamMembers = [
     { name: "dr. emily brown", role: "senior physiotherapist", img: teamImg1 },
     { name: "dr. lisa johnson", role: "pediatric therapist", img: teamImg2 },
@@ -22,7 +27,7 @@ function OurTeam() {
         <div className="row align-items-center section-row">
           <div className="col-lg-9">
             <div className="section-title">
-              <h3>Therapist Team</h3>
+              <h3 data-aos="flip-up" data-aos-duration="3000">Therapist Team</h3>
               <h2>
                 <span>Our Dedicated</span> & Experienced Therapist Team
               </h2>
@@ -40,7 +45,12 @@ function OurTeam() {
         <div className="row">
           {teamMembers.map((member, index) => (
             <div className="col-lg-3 col-md-6" key={index}>
-              <div className="team-member-item">
+              <div
+                className="team-member-item"
+                data-aos="zoom-in"
+                data-aos-duration="3000"
+                data-aos-delay={`${0.25 * index}s`}
+              >
                 <div className="team-image">
                   <figure className="image-anime">
                     <img src={member.img} alt={member.name} />

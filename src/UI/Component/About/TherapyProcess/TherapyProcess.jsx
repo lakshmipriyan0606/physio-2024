@@ -1,8 +1,14 @@
+import React from 'react';
 import theraphyImg1 from '../../../../assets/images/therapy-process-1.jpg'
 import theraphyImg2 from '../../../../assets/images/therapy-process-2.jpg'
 import theraphyImg3 from '../../../../assets/images/therapy-process-3.jpg'
 import theraphyImg4 from '../../../../assets/images/therapy-process-4.jpg'
+import AOS from 'aos';
+
 const TherapyProcess = () => {
+  React.useEffect(() => {
+    AOS.init({duration:4000})
+  }, []);
   return (
     <div className="therapy-process">
       <div className="container">
@@ -10,7 +16,7 @@ const TherapyProcess = () => {
           <div className="col-lg-12">
             {/* Section Title Start */}
             <div className="section-title">
-              <h3 className="wow fadeInUp">therapy process</h3>
+              <h3 data-aos="flip-up" data-aos-duration="3000">therapy process</h3>
               <h2 className="text-anime-style-2" data-cursor="-opaque">
                 <span>What</span> is Therapy Process
               </h2>
@@ -22,7 +28,12 @@ const TherapyProcess = () => {
         <div className="row">
           <div className="col-lg-3 col-md-6">
             {/* Therapy Process Item Start */}
-            <div className="therapy-process-item wow fadeInUp">
+            <div
+              className="therapy-process-item"
+              data-aos="zoom-in"
+           data-aos-duration="1900"
+              data-aos-delay="250"
+            >
               {/* Icon Box Start */}
               <div className="icon-box">
                 <figure className="image-anime">
@@ -43,7 +54,12 @@ const TherapyProcess = () => {
 
           <div className="col-lg-3 col-md-6">
             {/* Therapy Process Item Start */}
-            <div className="therapy-process-item wow fadeInUp" data-wow-delay="0.25s">
+            <div
+              className="therapy-process-item"
+              data-aos="zoom-in"
+           data-aos-duration="1900"
+              data-aos-delay="500"
+            >
               {/* Icon Box Start */}
               <div className="icon-box">
                 <figure className="image-anime">
@@ -64,7 +80,12 @@ const TherapyProcess = () => {
 
           <div className="col-lg-3 col-md-6">
             {/* Therapy Process Item Start */}
-            <div className="therapy-process-item wow fadeInUp" data-wow-delay="0.5s">
+            <div
+              className="therapy-process-item"
+              data-aos="zoom-in"
+           data-aos-duration="1900"
+              data-aos-delay="750"
+            >
               {/* Icon Box Start */}
               <div className="icon-box">
                 <figure className="image-anime">
@@ -85,7 +106,12 @@ const TherapyProcess = () => {
 
           <div className="col-lg-3 col-md-6">
             {/* Therapy Process Item Start */}
-            <div className="therapy-process-item wow fadeInUp" data-wow-delay="0.75s">
+            <div
+              className="therapy-process-item"
+              data-aos="zoom-in"
+           data-aos-duration="1900"
+              data-aos-delay="1000"
+            >
               {/* Icon Box Start */}
               <div className="icon-box">
                 <figure className="image-anime">

@@ -74,13 +74,42 @@ const navBarList = [
     name: "Contact Us",
     link: "/contact",
   }
+]
+
+;
+const sidebarList = [
+  {
+    id: 1,
+    name: "Home",
+    link: "/",
+  },
+  {
+    id: 2,
+    name: "About",
+    link: "/about",
+  },
+  {
+    id: 3,
+    name: "Services",
+    link: "/services",
+  },
+  {
+    id: 4,
+    name: "Our detail",
+    link: "/our-detail",
+  },
+  {
+    id: 5,
+    name: "Contact Us",
+    link: "/contact",
+  }
 ];
 
 const SidebarMenu = ({ isOpen }) => {
   return (
     <div className={`sidebar ${isOpen ? "expand" : "collapse"}`}>
       <ul>
-        {navBarList.map((data) => {
+        {sidebarList.map((data) => {
           return (
             <Link key={data.id} to={data.link} onClick={()=>setIsOpen(!isOpen)}>
               {data.name}

@@ -1,16 +1,21 @@
 import React from 'react';
+import AOS from 'aos';
 import ExpertIcon from '../../../../../assets/images/icon-home-contact-us-1.svg'
 import EmergencyIcon from '../../../../../assets/images/icon-home-contact-us-2.svg'
 import consultantIcon from '../../../../../assets/images/icon-home-contact-us-3.svg'
 
-
 const HeroContactUs = () => {
+
+  React.useEffect(() => {
+    AOS.init({duration:4000})
+  }, []);
+
   return (
     <div className="home-contact-us">
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-6">
-            <div className="home-contact-item wow fadeInUp">
+            <div className="home-contact-item" data-aos="fade-left" data-aos-duration="2200">
               <div className="icon-box">
                 <img src={ExpertIcon} alt="ExpertIcon" />
               </div>
@@ -22,7 +27,7 @@ const HeroContactUs = () => {
           </div>
 
           <div className="col-lg-4 col-md-6">
-            <div className="home-contact-item wow fadeInUp" data-wow-delay="0.25s">
+            <div className="home-contact-item" data-aos="fade-down" data-aos-duration="2200">
               <div className="icon-box">
                 <img src={EmergencyIcon} alt="EmergencyIcon" />
               </div>
@@ -34,7 +39,7 @@ const HeroContactUs = () => {
           </div>
 
           <div className="col-lg-4 col-md-6">
-            <div className="home-contact-item wow fadeInUp" data-wow-delay="0.5s">
+            <div className="home-contact-item" data-aos="fade-right" data-aos-duration="2200">
               <div className="icon-box">
                 <img src={consultantIcon} alt="consultantIcon" />
               </div>

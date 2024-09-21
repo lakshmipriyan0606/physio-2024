@@ -11,6 +11,7 @@ const Loading = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 

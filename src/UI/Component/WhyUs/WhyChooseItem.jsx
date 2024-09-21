@@ -1,9 +1,11 @@
+import React from "react";
 import whyUsIcon1 from "../../../assets/images/icon-why-us-1.svg";
 import whyUsIcon2 from "../../../assets/images/icon-why-us-2.svg";
 import whyUsIcon3 from "../../../assets/images/icon-why-us-3.svg";
 import whyUsIcon4 from "../../../assets/images/icon-why-us-4.svg";
 import whyUsIcon5 from "../../../assets/images/icon-why-us-5.svg";
 import whyUsIcon6 from "../../../assets/images/icon-why-us-6.svg";
+import AOS from 'aos';
 
 export const getWhyChooseUsItems = [
   {
@@ -45,17 +47,27 @@ export const getWhyChooseUsItems = [
   },
 ];
 
-export const WhyChooseUsItem = ({ icon, title, description, delay }) => (
-  <div
-    className={`why-choose-item wow fadeInUp`}
-    style={{ animationDelay: delay }}
-  >
-    <div className="icon-box">
-      <img src={icon} alt="icons" />
+export const WhyChooseUsItem = ({ icon, title, description, delay, index }) => {
+
+  React.useEffect(() => {
+    AOS.init({duration:4000})
+  }, []);
+
+  const animation = index % 2 === 0 ? "flip-up" : "flip-down";
+  return (
+    <div
+      className={`why-choose-item`}
+      data-aos={animation}
+      data-aos-duration={index % 2 === 0 ? 1500 : 3000}
+      data-aos-delay={index * 300}
+    >
+      <div className="icon-box">
+        <img src={icon} alt="icons" />
+      </div>
+      <div className="why-choose-content">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
     </div>
-    <div className="why-choose-content">
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
-  </div>
-);
+  );
+};
